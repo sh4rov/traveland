@@ -1,0 +1,18 @@
+@use '../../styles/utils/rem' as *;
+
+.nav {
+  &__list {
+    list-style: none;
+    display: flex;
+  }
+
+  &__item:not(:last-of-type) {
+    margin-right: 50px;
+  }
+
+  &__link { 
+    font-size: rem(16px);
+    text-decoration: none;
+    color: #fff 
+  }
+}

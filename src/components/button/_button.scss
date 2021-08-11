@@ -1,0 +1,14 @@
+@use '../../styles/utils/rem' as *;
+
+.button {
+  border: transparent;
+  text-align: center;
+  background-color: var(--color-red);
+  border-radius: 5px;
+  cursor: pointer;
+
+  &__inner {
+    color: var(--color-white);
+    font-size: rem(16px);
+  }
+}

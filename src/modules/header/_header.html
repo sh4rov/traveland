@@ -1,0 +1,18 @@
+<header class="header">
+
+  <div class="header__part header__part_logo">
+    @@include('../../components/logo/_logo.html')
+  </div>
+
+  <div class="header__part header__part_nav">
+    @@include('../nav/_nav.html')
+  </div>
+
+  <div class="header__part header__part_button">
+    @@include('../../components/button/_button.html', {
+      "mixClass": "header__button",
+      "title": "Booking now"
+    }')
+  </div>
+
+</header>

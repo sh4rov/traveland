@@ -1,9 +1,13 @@
 :root {
   --font-primary: 'Roboto', sans-serif;
+
   --color-white: #fff;
   --color-black: #000;
+  --color-red: #c9453b;
+
   --img-bcg: ('../img/bcg.png');
-  --container-width: 1315px;
+  --container-width: 1180px;
+  --container-ident: 20px;
 }
 
 .page { box-sizing: border-box; }
@@ -33,7 +37,9 @@
 .page__footer { flex-shrink: 0; }
 
 .container {
+  width: 100%;
   max-width: var(--container-width);
+  margin: 0 auto;
+  padding-left: var(--container-ident);
+  padding-right: var(--container-ident);
 }
-
-.fw-700 { font-weight: 700; }
