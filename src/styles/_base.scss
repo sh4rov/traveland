@@ -1,11 +1,13 @@
+@use '../styles/utils/rem' as *;
+
 :root {
-  --font-primary: 'Roboto', sans-serif;
+  --font-primary: 'Roboto';
+  --font-secondary: 'Gelasio';
 
   --color-white: #fff;
   --color-black: #000;
   --color-red: #c9453b;
 
-  --img-bcg: ('../img/bcg.png');
   --container-width: 1180px;
   --container-ident: 20px;
 }
@@ -27,9 +29,9 @@
   display: flex;
   flex-direction: column;
   font-family: var(--font-primary);
+  line-height: 1.6;
   color: var(--color-white);
   background-color: var(--color-black);
-  background-image: var(--img-bcg);
   background-repeat: repeat;
 }
 
@@ -43,3 +45,13 @@
   padding-left: var(--container-ident);
   padding-right: var(--container-ident);
 }
+
+.title { 
+  font-family: var(--font-secondary, serif);
+  font-weight: 700;
+}
+
+.title-h1 { font-size: rem(65px) ;}
+.title-h2 { font-size: rem(43px); }
+.title-h3 { font-size: rem(24px); }
+.title-h4 { font-size: rem(20px); }

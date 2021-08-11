@@ -1,5 +1,28 @@
+@use '../../styles/utils/rem' as *;
+
 .hero {
   min-height: 900px;
-  background-image: url('../img/hero.jpg');
+  background: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('../img/hero.jpg');
   background-size: cover;
+
+  &__top {
+    margin-bottom: 200px;
+  }
+
+  &__title {
+    max-width: 804px;
+    line-height: 1.2;
+  }
+
+  &__desc {
+    max-width: 408px;
+    margin-bottom: 40px;
+    line-height: 1.555;
+    color: rgba(225, 225, 225, .6);
+    font-size: rem(18px);
+  }
+
+  &__button {
+    padding: 18px 47px;
+  }
 }

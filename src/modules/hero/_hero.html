@@ -1,5 +1,23 @@
 <section class="hero">
   <div class="container hero__container">
-    @@include('../header/_header.html')
+    <div class="hero__top">
+      @@include('../header/_header.html')
+    </div>
+    <!-- hero__bottom BEGIN -->
+    <div class="hero__bottom">
+      <h1 class="title title-h1 hero__title">
+        Railtrips To&nbsp;Here, There And Everywhere!
+      </h1>
+  
+      <p class="hero__desc">
+        We&nbsp;all wish to&nbsp;start our year the best way possible and also according to&nbsp;a&nbsp;common belief if&nbsp;you have a&nbsp;great start to&nbsp;your.
+      </p>
+  
+      @@include('../../components/button/_button.html', {
+        "mixClass": "hero__button",
+        "title": "Explore more"
+      })
+    </div>
+    <!-- hero__bottom END -->
   </div>
 </section>
