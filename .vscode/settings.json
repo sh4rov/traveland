@@ -1,0 +1,10 @@
+{
+  "files.exclude": {
+    ".babelrc": true,
+    ".prettierignore.yml": true,
+    ".gitignore": true,
+    "prettierrc.yml": true,
+    "package-lock.json": true,
+    ".vscode": false
+  }
+}
