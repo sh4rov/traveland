@@ -10,6 +10,8 @@
 
   --container-width: 1180px;
   --container-ident: 20px;
+
+  --section-ident: 70px;
 }
 
 .page { box-sizing: border-box; }
@@ -37,9 +39,8 @@
 
 .page__main { 
   flex: auto;
-  padding-top: 140px;
-  padding-bottom: 140px;
 }
+
 .page__footer { flex-shrink: 0; }
 
 .container {
@@ -48,6 +49,18 @@
   margin: 0 auto;
   padding-left: var(--container-ident);
   padding-right: var(--container-ident);
+
+  &_section {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+}
+
+.main-section,
+.page__main {
+  padding-top: var(--section-ident);
+  padding-bottom: var(--section-ident);
 }
 
 .title { 

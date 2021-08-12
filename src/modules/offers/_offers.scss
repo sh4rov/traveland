@@ -1,0 +1,13 @@
+@forward '../location/location';
+
+.offers {
+
+  &__desc {
+    max-width: 656px;
+    margin-bottom: 60px;
+  }
+
+  &__content {
+    @extend .location__content;
+  }
+}
