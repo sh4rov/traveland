@@ -1,0 +1,22 @@
+.location {
+  
+  &__container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  &__desc {
+    max-width: 735px;
+  }
+
+  &__content {
+    display: flex;
+  }
+
+  &__card {
+    max-width: 360px;
+  }
+
+  &__card:not(:last-of-type) { margin-right: 30px; }
+}
