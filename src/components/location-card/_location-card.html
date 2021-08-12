@@ -1,7 +1,12 @@
 <article class="location-card">
   <div class="location-card__head">
-    <img src="@@imgSrc" alt="imgAlt" class="location-card__img">
+    <img src="@@imgSrc" alt="imgAlt" class="location-card__img location-card__img_@@imgClassMod">
   </div>
-  <h3 class="title title-h3 location-card__title">@@title</h3>
-  <p class="desc desc_section location-card__desc">@@desc</p>
+  <div class="location-card__text">
+    <h3 class="title title-h3 location-card__title">
+      @@title
+      <a href="javascript:void(0)" class="location-card__link" aria-hidden="true"></a>
+    </h3>
+    <p class="desc desc_section location-card__desc">@@desc</p>
+  </div>
 </article>
