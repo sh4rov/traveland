@@ -30,12 +30,16 @@
   flex-direction: column;
   font-family: var(--font-primary);
   line-height: 1.6;
-  color: var(--color-white);
-  background-color: var(--color-black);
+  color: var(--color-black);
+  background-color: var(--color-white);
   background-repeat: repeat;
 }
 
-.page__content { flex: auto; }
+.page__main { 
+  flex: auto;
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
 .page__footer { flex-shrink: 0; }
 
 .container {
@@ -48,10 +52,33 @@
 
 .title { 
   font-family: var(--font-secondary, serif);
-  font-weight: 700;
+  
+  &_section {
+    margin-bottom: 20px;
+    text-align: center;
+  }
 }
 
-.title-h1 { font-size: rem(65px) ;}
+.title-h1 { font-size: rem(65px); }
 .title-h2 { font-size: rem(43px); }
 .title-h3 { font-size: rem(24px); }
 .title-h4 { font-size: rem(20px); }
+
+.title-h1 { font-weight: 700; }
+
+.title-h2,
+.title-h3,
+.title-h4 { 
+  font-weight: 500;
+}
+
+.desc {
+  font-size: rem(18px);
+  color: rgba(#000, .6);
+
+  &_section {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
+
