@@ -10,4 +10,8 @@
   &__content {
     @extend .location__content;
   }
+
+  &__card:not(:last-of-type) {
+    margin-right: 73px;
+  }
 }

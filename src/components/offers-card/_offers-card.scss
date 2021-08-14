@@ -1,0 +1,31 @@
+.offers-card {
+  position: relative;
+  flex: 1 1 264px;
+  min-width: 150px;
+  overflow: hidden;
+  
+  &__body {
+    display: flex;
+    flex-flow: column;
+  }
+
+  &__img {
+    align-self: center;
+    max-height: 173px;
+    border-radius: var(--border-radius-base);
+    object-fit: cover;
+  }
+
+  &__row {
+    display: flex;
+  }
+
+  &__location,
+  &__rating {
+    display: inline-flex;
+  }
+
+  &__location {
+    margin-right: 50px;
+  }
+}
