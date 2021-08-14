@@ -6,24 +6,69 @@
     <p class="desc desc_section offers__desc">
       With the New Year comes a refreshing sense of wanderlust, a longing in our souls to escape to warmer climates.
     </p>
-    <div class="offers__content">
-      <div class="offers__card">
-        @@include('../../components/offers-card/_offers-card.html', {
-          "imgSrc": "img/content/offers-usa.jpg",
-          "imgAlt": "Images USA",
-          "imgClassMod": "usa",
-          "title": "Statue of Liberty.",
-          "location": {
-            "name": "New York",
-            "rating": "4.8",
-          },
-          "days": {
-            "day": "4",
-            "night": "5"
-          },
-          "price": "450"
-        })
+  </div>
+  <div class="offers-slider swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="offers__card">
+          @@include('../../components/offers-card/_offers-card.html', {
+            "imgSrc": "img/content/offers-usa.jpg",
+            "imgAlt": "Images USA",
+            "imgClassMod": "usa",
+            "title": "Statue of Liberty.",
+            "location": {
+              "name": "New York",
+              "rating": "4.8",
+            },
+            "days": {
+              "day": "4",
+              "night": "5"
+            },
+            "price": "450"
+          })
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="offers__card">
+          @@include('../../components/offers-card/_offers-card.html', {
+            "imgSrc": "img/content/offers-usa.jpg",
+            "imgAlt": "Images USA",
+            "imgClassMod": "usa",
+            "title": "Statue of Liberty.",
+            "location": {
+              "name": "New York",
+              "rating": "4.8",
+            },
+            "days": {
+              "day": "4",
+              "night": "5"
+            },
+            "price": "450"
+          })
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="offers__card">
+          @@include('../../components/offers-card/_offers-card.html', {
+            "imgSrc": "img/content/offers-usa.jpg",
+            "imgAlt": "Images USA",
+            "imgClassMod": "usa",
+            "title": "Statue of Liberty.",
+            "location": {
+              "name": "New York",
+              "rating": "4.8",
+            },
+            "days": {
+              "day": "4",
+              "night": "5"
+            },
+            "price": "450"
+          })
+        </div>
       </div>
     </div>
+    <div class="offers-pagination swiper-pagination"></div>
+    <button class="offers-button-prev"></button>
+    <button class="offers-button-next"></button>
   </div>
 </section>

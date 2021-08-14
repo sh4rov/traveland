@@ -14,7 +14,11 @@ module.exports = {
   },
 
   scripts: {
-    src: src + '/js/**/*.js',
+    src: [
+      src + '/js/**/*.js',
+      src + '/components/**/*.js',
+      src + '/modules/**/*.js',
+    ],
     dist: dist + '/js'
   },
 
@@ -22,7 +26,10 @@ module.exports = {
     css: dist + '/styles/**/*.css',
     scss: src + '/**/*.scss',
     html: src + '/**/*.html',
-    js: src + '/js/**/*.js',
+    js: [
+      src + '/components/**/*.js',
+      src + '/modules/**/*.js',
+    ],
     img: src + '/img/**/*.{jpg,png,gif,webp,svg}',
     video: src + '/video/**/*.mp4',
   },

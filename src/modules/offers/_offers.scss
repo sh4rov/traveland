@@ -6,12 +6,4 @@
     max-width: 656px;
     margin-bottom: 60px;
   }
-
-  &__content {
-    @extend .location__content;
-  }
-
-  &__card:not(:last-of-type) {
-    margin-right: 73px;
-  }
 }

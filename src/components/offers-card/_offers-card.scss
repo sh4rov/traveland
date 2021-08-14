@@ -1,8 +1,11 @@
+@use '../../styles/utils/rem' as *;
+
 .offers-card {
   position: relative;
   flex: 1 1 264px;
   min-width: 150px;
   overflow: hidden;
+  line-height: 1.5;
   
   &__body {
     display: flex;
@@ -23,9 +26,38 @@
   &__location,
   &__rating {
     display: inline-flex;
+    align-items: center;
+    font-size: rem(20px);
   }
 
   &__location {
     margin-right: 50px;
+  }
+
+  &__icon {
+    align-self: center;
+  }
+
+  &__icon_location { margin-right: 10px; }
+  &__icon_star { margin-left: 10px; }
+  &__price { 
+    font-size: rem(18px);
+    font-weight: 500;
+  }
+
+  &__location,
+  &__days,
+  &__person {
+    color: var(--color-dark);
+  }
+
+  &__person {
+    position: relative;
+    transform: translateY(2px);
+  }
+
+  &__row:first-of-type,
+  &__days {
+    margin-bottom: 8px;
   }
 }
